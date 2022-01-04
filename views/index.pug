@@ -1,0 +1,118 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/yourcode.js' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')
+  title  Pentartstudio 
+  link(rel='stylesheet' href='../static/style.css')
+
+nav.navbar.cum_dark
+  .max_width
+    .logo
+      img(src='../static/pentart.svg' alt='')
+    ul.menu
+      li
+        a.menu-btn.active(href='#home') Home
+      li
+        a.menu-btn(href='#services') Services
+      li
+        a.menu-btn(href='#about') About US
+      li
+        a.menu-btn(href='#contact') Contact US
+    .menu-btn
+      i.fas.fa-bars
+
+
+section#home.home
+  .max_width_section
+    .row
+      .home-content
+        .text-1 Changing your
+        .text-2
+          | vision to a 
+          b mission
+        .text-3  Build your dream with our team.
+        a.get_started(href='#') Get Started
+        .social_media
+          a.redirect_sm(href='https://www.facebook.com/pentartstudio/')
+            img(src='../static/facebook.png' alt='')
+          a.redirect_sm(href='redirect_sm')
+            img(src='../static/twitter.png' alt='')
+          a.redirect_sm(href='redirect_sm')
+            img(src='../static/linkedin.png' alt='')
+    .teams
+      img(src='../static/teams.png' alt='')
+
+
+section
+  #services
+    .our_services OUR SERVICES
+    .heading We Are Here To Help You Grow
+    .service1
+      .content1a
+        img(src='../static/services1.png' alt='')
+      .content1b
+        .branding Branding and Design
+        .about_branding
+          p
+            | Eyes are on the windows to the soul and often are the best critics; therefore designing and branding becomes an important asset and enriches your work . Considering this important aspect, we have an established team of perfectly unique designers who cater to all your trendy needs.
+    .service2
+      .content2a
+        .web_d Web Design and Development
+        .about_web_d
+          p
+            | We help businesses plan, design and build mobile apps that consumers love to use. We partner with several prestigious brands and have build apps, across platforms, in Consumer Mobility, Enterprise Mobility and Entertainment segments.
+      .content2b
+        img(src='../static/services2.png' alt='')
+    .service3
+      .content3a
+        img(src='../static/services3.png' alt='')
+      .content3b
+        .seo SEO
+        .about_seo
+          p
+            | SEO and maintaining a website is important for any business in order to achieve desired results. We help you gain popularity by promoting it digitally on various social media platforms. You name the platform; we exhibit your brand, ubiquitously.
+    .service4
+      .content4a
+        .app_dev Mobile App Development
+        .about_app_dev
+          p
+            | The world demands quick and effective information and feedback, and internet plays a vital role in fulfilling this requirement. Thus, reaching the mass and serving them individually can only be possible via web. We have a team comprising of super techie gurus, who help in developing your website and promoting it via SEO and other effective tools.
+      .content4b
+        img(src='../static/services4.png' alt='')
+
+
+section
+  #about
+    .about_us ABOUT US
+    .why_us Why Pentartstudio?
+    .content_aboutus
+      .c_about1
+        img(src='../static/aboutus.png' alt='')
+      .c_about2
+        p.text
+          | We are a bunch of enthusiasts who envision to change the way people view digital content. With a prospect to meet our clientele expectations, we are also committed to provide distinctive solution to each client. We believe that every client is different and has unique needs. Hence, we ensure to confer respective solutions.
+          br
+          br
+          |         Whether it&apos;s about creating an eCommerce website or a basic one, whether you demand visual projects or branding and designing, or it is editing that your business runs on, we provide you round the clock service. Our approach adds Digital Marketing Strategy, Creative Communication, E-Commerce, Web Development, Social Media Marketing and more.
+
+section.section4
+  #contact
+    .contactus CONTACT US
+    .heading_contact Let&apos;s Work Together
+    .sub_heading We&apos;d Love To Hear From You 
+    .input
+      form.contact_form(action='#' method='POST')
+        .fields
+          .field.email
+            input.mail(type='text' name='email' placeholder=' enter your email id...' style='font-family:Arial, FontAwesome')
+          .field.textarea
+            textarea.message(cols='25' rows='8' name='desc' placeholder='Type Your Query...')
+          .field.button_area
+            button.send_msg(type='submit' name='send') Submit
+
+script(src='/static/script.js')

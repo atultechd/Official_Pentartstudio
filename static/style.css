@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 57.5%;
+    max-width: 1350px;
+}
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+section{
+    overflow: auto;
+}
+.max_width{
+    padding: 1rem 8rem;
+    margin: auto;
+}
+.max_width_section{
+    display: flex;
+    margin: auto;
+    
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*.......................navbar styling.................... */
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0rem 0.6rem 1.2rem -0.2rem, 
+    rgba(0, 0, 0, 0.3) 0rem 0.3rem 0.7rem -0.3rem;
+}
+
+.navbar .max_width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    width:15rem;
+    height:5rem;
+    padding-top:3rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    cursor: pointer;
+    background: linear-gradient(266.29deg, #FF9C07 -0.46%, 
+        rgba(247, 63, 0, 0.78) 118.81%);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu  styling */
+.menu-btn{
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+    padding: 3.0rem;
+    text-align: center;
+}
+
+
+/*.............. home section styling.....................*/
+
+
+.home{
+    background-image: linear-gradient(315deg, #ebe9e9 0%, #fbfbfb 74%);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max_width_section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.home .max_width_section .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+.home .home-content .text-1{
+    font-size: 6.0rem;
+    font-weight: 600;
+    font-family: poppins;
+    font-style: normal;
+}
+.home .home-content .text-2{
+    font-size: 6.0rem;
+    font-weight: 600;
+    margin-left: -0.3rem;
+    font-family: poppins;
+    font-style: normal;
+}
+/*text-2 mission*/
+
+b{
+    background-color: #00d0ff;
+    color: white;
+}
+
+.arrow img{
+    margin-left: 50.0rem;
+    margin-top: 0;
+}
+.home .home-content .text-3{
+    font-size: 1.6rem;
+    color: #848282;
+}
+
+.get_started{
+    display: inline-block;
+    background: linear-gradient(266.29deg, #FF9C07 -0.46%, 
+        rgba(247, 63, 0, 0.78) 118.81%);
+    border-radius: .6rem;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1.2rem 3.6rem;
+    margin-top: 4.0rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.get_started:hover{
+    background:linear-gradient(266.29deg, #af6900 -0.46%, 
+        rgb(212, 54, 0 , 78%) 118.81%);
+    cursor: pointer;
+    padding: 1.3rem 3.7rem;
+}
+.teams{
+    display: flex;
+    justify-content: flex-end;
+    /*flex-wrap: wrap;*/
+    float: right;
+    width: 50%;
+}
+.teams img{
+    object-fit: cover;
+    width: 45rem;
+}
+
+.social_media{
+    margin-top: 2rem;
+}
+
+.redirect_sm img{
+    padding: 2rem 1rem 2rem;
+}
+
+.redirect_sm img:hover{
+    transform: rotate(-30deg);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+/*..............service section styling........................*/
+
+
+#services{
+    background: url("line2.png") no-repeat center top;
+    background-size: 70rem 24rem;
+    background-position: 297px 108px;
+    background-color: #F8A42D;
+    padding-bottom: 5rem;
+    padding-top: 12rem;
+}
+
+#services p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.our_services{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.heading{
+    color: white;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+
+.service1{
+    flex-direction: row;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-family: poppins;
+    margin: 4rem auto;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content1b{
+    padding-left: 8rem; 
+}
+.branding{
+    font-style: bold;
+    font-size: 2.2rem;
+    padding-bottom: 2.0rem;
+}
+.about_branding{
+    font-size: 1.4rem;
+}
+
+.service2{
+    flex-direction: row;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 4.0rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-family: poppins;
+    margin: 4rem auto; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.web_d{
+    font-style: bold;
+    font-size: 2.2rem;
+    padding-bottom: 2.0rem;
+}
+.about_web_d{
+    font-size: 1.4rem;
+}
+
+.content2a{
+    padding-right:8.0rem;
+}
+
+.service3{
+    flex-direction: row;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 4.0rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-family: poppins;
+    margin: 4rem auto; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content3b{
+    padding-left: 8.0rem; 
+}
+.seo{
+    font-style: bold;
+    font-size: 2.2rem;
+    padding-bottom: 2.0rem;
+}
+
+.service4{
+    flex-direction: row;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 4.0rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;
+    font-family: poppins;
+    margin: 5.0rem auto 15.0rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.app_dev{
+    font-style: bold;
+    font-size: 2.2rem;
+    padding-bottom: 2.0rem;
+}
+
+.content4a{
+    padding-right:8.0rem;
+}
+
+
+/*...............About us section styling.....................*/
+
+
+#about{
+    background: url("line.png") no-repeat;
+    background-position: 67rem 19rem;
+    padding-top: 11.0rem;
+    padding-bottom: 5rem;
+}
+
+.about_us{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #F59046;
+    font-weight: 500;
+}
+
+.why_us{
+    padding-top: 1.0rem;
+    padding-bottom: 5.0rem;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+
+.content_aboutus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 5rem;
+}
+
+.c_about1 img{
+    width: 41rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.c_about2{
+    font-family: poppins;
+    padding-left: 6.0rem;
+    font-style: regular;
+    font-size: 2.0rem;
+    letter-spacing: 8.5%;
+    color:#676262;
+    text-align: justify;
+}
+
+p{
+    color:#676262;
+}
+
+/*................contact us section styling......................*/
+
+.section4{
+    padding: 5rem 0;
+}
+#contact{
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5b5b5b;
+    border: none;
+    border-radius: 6.1rem;
+    width: 85%;
+    margin: auto;
+}
+
+.contactus{
+    padding-top: 4.0rem;
+    font-family: poppins;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+}
+.heading_contact{
+    padding-top: 1rem;
+    font-family: Poppins;
+    font-size: 4.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.sub_heading{
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 2rem;
+
+}
+.field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail{
+    border: 0;
+    outline: 0;
+    padding: 1.5rem 4rem;
+    border-radius: 0.7rem;
+}
+textarea{
+    text-indent: 2.5rem;
+}
+.message{
+    margin : 1.5rem auto;
+    outline: 0;
+    border: 0;
+    border-radius: 0.7rem;
+    padding: 1.2rem 2rem 1rem;
+}
+.send_msg{
+    margin: 0.1rem auto 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-family: poppins;
+    font-size: 1.5rem;
+    background: linear-gradient(266.29deg, #FF9C07 -0.46%, 
+        rgba(247, 63, 0, 0.78) 118.81%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    padding: 1rem 9.5rem;
+}
+.send_msg:hover{
+    background:linear-gradient(266.29deg, #af6900 -0.46%, 
+        rgb(212, 54, 0 , 78%) 118.81%);
+    cursor: pointer;
+    padding: 1.2rem 10.6rem;
+}
+
+
+/*................Media Queries for responsiveness......................*/
+
+
+@media(max-width: 998px){
+    html{
+        font-size: 50%;
+        box-sizing: border-box;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 42%;
+        box-sizing: border-box;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+        color: white;
+        left: -50%
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 70%;
+        left: -50%;
+        top: 0;
+        background: #ffffff00;
+        text-align: center;
+        padding-top: 30px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 50%;
+        height: 81rem;
+        background: url("circle_menu.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 288%;
+        background-size: 64rem 89rem;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        color: white;
+        margin: 4px 0;
+        font-size: 20px;
+    }
+    .active{
+        background:none;
+    }
+    .service1{
+        flex-direction: column;
+    }
+    .service1 .content1b{
+        padding: 0;
+    }
+    .service1 img{ 
+        width: 25rem;
+        height: 11rem;
+    }
+    .service2{
+        flex-direction: column;
+    }
+    .service2 .content2a{
+        padding: 0;
+    }
+    .service2 img{ 
+        width: 25rem;
+        height: 11rem;
+    }
+    .service3{
+        flex-direction: column;
+    }
+    .service3 .content3b{
+        padding: 0;
+    }
+    .service3 img{ 
+        width: 25rem;
+        height: 11rem;
+    }
+    .service4{
+        flex-direction: column;
+    }
+    .service4 .content4a{
+        padding: 0;
+    }
+    .service4 img{ 
+        width: 25rem;
+        height: 11rem;
+    }
+    .c_about1 img{
+        min-width: 35rem;
+        float: left;
+    }
+}
+
+@media(max-width: 560px){
+    html{
+        font-size: 35%;
+        box-sizing: border-box;
+    }
+    .navbar .menu.active{
+        left: 50%;
+        height: 81rem;
+        background: url("circle_menu.svg");
+        background-repeat: no-repeat;
+        background-position: -17% 264%;
+        background-size: 66rem 89rem;
+    }
+    .navbar .menu li a{
+        font-size: 16px;
+    }
+    .home{
+        background: url("bg_home.png") no-repeat;
+        background-attachment: fixed;
+    }
+    .teams{
+        display: none;
+    }
+    .teams img{
+        display: none;
+    }
+    .row{
+        width: 100%;
+    }
+    #services{
+        background-image: none;
+    }
+    #about{
+        background: none;
+    }
+    .content_aboutus{
+        display: inline;
+    }
+    p.text{
+        margin-right: 1rem;
+    }
+    .message{
+        padding: 1.2rem 1rem 0;
+    }
+    input.mail{
+        padding: 1.5rem 2.5rem;
+    }
+    textarea{
+        text-indent: 3.5rem;
+    }
+}
