@@ -8,7 +8,7 @@ main().catch(err => console.log(err));
 async function main() {
   await mongoose.connect('mongodb://localhost/contactpentart');
 }
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // DEFINE MONGOOSE SCHEMA
 const contactSchema = new mongoose.Schema({
